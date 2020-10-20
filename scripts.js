@@ -26,11 +26,11 @@ const RespuestaIncorrecta = 'Tu respuesta es incorrecta'
 function handleFirstQ (){
     if(firstqq === "Stallone"){
         console.log('Vas bien')
-        return curiosityFirstQ.innerText = 'Tu respuesta es correcta ¿Sabías que Sylvester Stallone a principios de los 70 Stallone se traslada a Nueva York, persiguiendo el sueño de triunfar en Hollywood, pero la falta de papeles acaba obligándolo a vivir en una estación de autobús durante 3 meses? Durante estos tres meses su necesidad fue tal que tuvo que vender a su perro por 25$, al que recuperaría meses después por 3000$ tras escribir el guión de Rocky'
+        return curiosityFirstQcontent = 'Tu respuesta es correcta ¿Sabías que Sylvester Stallone a principios de los 70 Stallone se traslada a Nueva York, persiguiendo el sueño de triunfar en Hollywood, pero la falta de papeles acaba obligándolo a vivir en una estación de autobús durante 3 meses? Durante estos tres meses su necesidad fue tal que tuvo que vender a su perro por 25$, al que recuperaría meses después por 3000$ tras escribir el guión de Rocky'
     }
     else{
         return RespuestaIncorrecta
     }
 }
-
+const curiosityFirstQcontent = curiosityFirstQ.innerText
 const curiosityFirstQ = documentQuerySelector("#curiosity-first-q");
