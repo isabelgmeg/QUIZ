@@ -1,3 +1,117 @@
 body {
-    background-color: ghostwhite;
+    background-color:  #EFF1F3;
+}
+
+#titulo{
+    font-family: American Typewriter;
+    font-size: 34px;
+    color: #1F363D;
+    display: block;
+    text-align: center;
+}
+
+#numero-pregunta{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #1F363D;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+}
+
+#formulario-cine{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#first-block{
+    background-color: #40798C;
+    color: whitesmoke;
+    font-family: American Typewriter;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height:auto;
+    flex-wrap: wrap;
+    border: 3px;
+}
+
+#first-qq, #second-qq, #third-qq, #fourth-qq{
+    font-family: American Typewriter;
+    color: whitesmoke;
+    background-color: #1F363D;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    width:90%;
+    display: block;
+    flex-wrap: wrap;
+}
+
+#second-block{
+    background-color: #70A9A1;
+    color: whitesmoke;
+    font-family: American Typewriter;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#third-block{
+    background-color: #9EC1A3;
+    color: whitesmoke;
+    font-family: American Typewriter;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#fourth-block{
+    background-color: #CFE0C3;
+    color: whitesmoke;
+    font-family: American Typewriter;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#fifth-block{
+    background-color: #bdb09e;
+    color: whitesmoke;
+    font-family: American Typewriter;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+#submit-ffq, #submit-frq, #submit-fq, #submit-sq, #submit-tq{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #407f93;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 12px;
+}
+#imagen-contain{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#imagen{
+    width: 100%;
+    height: auto;
+    display: flex;
 }
