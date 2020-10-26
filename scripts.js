@@ -27,24 +27,40 @@ const RespuestaIncorrecta = 'Tu respuesta es incorrecta'
 
 const curiosityFirstQcontent = document.querySelector("#curiosity-first-q");
 
-const answerFirstQ = document.querySelector("#button-fq");
+//const answerFirstQ = document.querySelector("#button-fq");
 
 //Declaramos la funcion
 function handleFirst(click) {
     console.log(firstqq)
-    if(firstqq === "Stallone"){
-        return answerFirstQ.innerText= 'Tu respuesta es correcta ¿Sabías que Sylvester Stallone a principios de los 70 Stallone se traslada a Nueva York, persiguiendo el sueño de triunfar en Hollywood, pero la falta de papeles acaba obligándolo a vivir en una estación de autobús durante 3 meses? Durante estos tres meses su necesidad fue tal que tuvo que vender a su perro por 25$, al que recuperaría meses después por 3000$ tras escribir el guión de Rocky'
-        
-        console.log('correcto')
-        alert('Vs bien')
-
-        function handleSolutionFirst(){
-            return curiosityFirstQcontent.innerText = 'Tu respuesta es correcta ¿Sabías que Sylvester Stallone a principios de los 70 Stallone se traslada a Nueva York, persiguiendo el sueño de triunfar en Hollywood, pero la falta de papeles acaba obligándolo a vivir en una estación de autobús durante 3 meses? Durante estos tres meses su necesidad fue tal que tuvo que vender a su perro por 25$, al que recuperaría meses después por 3000$ tras escribir el guión de Rocky'
-        }
-    }
-    else{
-        return 'hOLA'
+    if(firstqq.value === "Stallone"){
+        return curiosityFirstQcontent.innerText= 'Tu respuesta es correcta ¿Sabías que Sylvester Stallone a principios de los 70 Stallone se traslada a Nueva York, persiguiendo el sueño de triunfar en Hollywood, pero la falta de papeles acaba obligándolo a vivir en una estación de autobús durante 3 meses? Durante estos tres meses su necesidad fue tal que tuvo que vender a su perro por 25$, al que recuperaría meses después por 3000$ tras escribir el guión de Rocky'
+    }else{
+        return curiosityFirstQcontent.innerText = 'RespuestaIncorrecta'
     }
 }
 
+const button4 = document.querySelector('#button4')
+
+const FourthQOp1 = document.querySelector('#character1')
+const FourthQOp2 = document.querySelector('#character2')
+const FourthQOp3 = document.querySelector('#character3')
+const FourthQOp4 = document.querySelector('#character4')
+
+function handleFourth(event){
+    event.preventDefault()
+    if (FourthQOp1.checked && FourthQOp2.checked && FourthQOp3.checked && !FourthQOp4.checked){
+        console.log('vamos bien')
+    }else{
+        console.log ('Incorrecto!')
+    }
+}
+button4.addEventListener('click',handleFourth)
+// function handleFourth(event){
+//     event.preventDefault()
+//     if (FourthQOp1.checked === true && FourthQOp2.checked === true && FourthQOp3.checked === true && FourthQOp4.checked === false){
+//         console.log('vamos bien')
+//     }else{
+//         console.log ('Incorrecto!')
+//     }
+// }
 

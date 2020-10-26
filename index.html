@@ -13,9 +13,10 @@
 </head>
 <body>
     <h1 id="titulo">Cuestionario de Cine</h1>
-    <div id="marco-bloques">
     <form id="formulario-cine">
-        
+
+    <div id="marco-bloques">
+
         <div id = "first-block">
             <h3 id="numero-pregunta">Primera pregunta</h3>
             <label for="first-qq">¿Qué actor de Hollywood vivió en la calle durante unos meses hasta que su carrera despegó?</label><br>
@@ -26,16 +27,54 @@
                 <option value="Willis">Bruce Willis</option>
             </select>
             
-            <button type= "button" id = "button-fq" onclick = handleFirst ()>¡Prueba!&#9757
+            <button type= "button" id = "button-fq">¡Prueba!&#9757
             </button>
 
             <div id="curiosity-first-q-div">
-                <p onclick = handleSolutionFirst id= "curiosity-first-q">¿Sabias que...?</p>
+                <p id= "curiosity-first-q">¿Sabias que...?</p>
             </div>
-            <div id="imagen-contain" width= "100px"><img id="imagen" src="/Users/isabelgarcia/Desktop/BOOTCAMP/RAMPUP/JAVASCRIPT/19-OCT/QUIZ/ASSETS/1STQ.jpg" alt="imagen"></div>
+            <div id="imagen-contain" ><img id="imagen" src="/Users/isabelgarcia/Desktop/BOOTCAMP/RAMPUP/JAVASCRIPT/19-OCT/QUIZ/ASSETS/1STQ.jpg" alt="imagen"></div>
         </div><br>
+
+             <div id = "second-block">
+            <h3 id="numero-pregunta">Segunda pregunta</h3>
+            <label for="second-qq">¿Sabes cual es el origen del icónico código verde que puede verse a lo largo de todos los films de la saga de películas “Matrix”?</label><br>
+            <select name="second-qq" id="second-qq" required>
+                <option value="Codigo">Es código generado aleatoriamente</option>
+                <option value="Sushi">Se trata de recetas de sushi</option>
+                <option value="Manga">Es el texto del manga de Dragon Ball Z
+                </option>
+                <option value="Aleatorio">Mira, yo que sé…</option>
+            </select>
+            <buttton id = submit-sq type="submit" name="second-qq-button" value="¡Prueba!&#9757">
+            <div id="curiosity-second-q">
+                <p id= "curiosity-second-q"> Curiosity f(x)</p>
+            </div>
+            <div id="imagen-contain"><img id="imagen" src="/Users/isabelgarcia/Desktop/BOOTCAMP/RAMPUP/JAVASCRIPT/19-OCT/QUIZ/ASSETS/matrix.gif" alt="matrix"></div>
+        </div><br>
+
+        <!---->  
+        <div id = "fourth-block">
+            <h3 id="numero-pregunta">Cuarta pregunta</h3>
+            <label for="fourth-qq">¿¿Cuáles de los siguientes personajes sirvieron de inspiración para crear personajes de la saga Star Wars?</label><br>
+            <input type="checkbox" id="character1" name="character1" value="Clint">
+            <label for="character1"> Clint Eastwood</label><br>
+            <input type="checkbox" id="character2" name="character2" value="Einstein">
+            <label for="character2"> Albert Einstein</label><br>
+            <input type="checkbox" id="character3" name="character3" value="Laural-Hardy">
+            <label for="character3"> Stan Laural y Oliver Hardy</label><br>
+            <input type="checkbox" id="character4" name="character4" value="Astaire">
+            <label for="character4"> Fred Astaire</label><br><br>
+
+            <button id= "button4"> aqui funcion</button>
+            <div id="curiosity-fourth-q">
+                <p id= "curiosity-fourth-q"> Curiosity f(x)</p>
+            </div>
+            <div id="imagen-contain"><img id="imagen" src="/Users/isabelgarcia/Desktop/BOOTCAMP/RAMPUP/JAVASCRIPT/19-OCT/QUIZ/ASSETS/star-wars.jpg" alt="pulp"></div>
+        </div><br>
+    </div>
         <button type="submit">SUBMIT ALL YOUR ANSWERS </button>
     </form>
-    </div>
+   
 </body>
 </html>
